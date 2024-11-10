@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+.center{
+    text-align: center;
+    color: #005757;
+    font-size: 150px;
+}
+body{
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+nav{
+    background-color: #ffffff;
+    font-family: Arial;
+    text-align: center;
+}
+nav a{
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    text-align: center;
+    color: #2c6e72;
+    padding: 10px;
+}
+footer{
+    background-color: #2a3d52;
+    text-align: center;
+    color: #cce1f9;
+    padding: 10px;
+}
+main{
+    padding:  20px;
+}
+.card{
+
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    background-image: url(ing.jpg);
+    background-size: cover;
+}
+article{
+    float: left;
+    width: 73%;
+}
+aside{
+    float: right;
+    width: 25%;
+    text-align: center;
+
+}
+.clearfix{
+    clear: both;
+}
+    
+main{
+   float: center;
+   width: 80%;
+   border: width 100px ;
+}
+
+/* 頭部 */
+.header > div {
+    flex-grow: 1;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.header a {
+    color:#D2E9FF;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color:#005757;
+    color: #b3f2f2;
+
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+}
+.menu-link {
+    display: flex;
+    justify-content: space-between;
+}
+.app {
+    height: 20vh;
+    margin-top: 12vh;
+}
+section {
+    padding-top: 12vh;
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+/* logo的樣式 */
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.header a:hover {
+		font-weight:bold;
+}
+/*進度條-1*/
+.circle{
+    --width: 150px;
+    --percent: 10;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(rgb(32, 127, 148) var(--deg), #ccc var(--deg));
+    position: relative;
+    }
+.circle-inside{
+--bar-width: 30px;
+position: absolute;
+        display: flex;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #ffffff;
+        width: calc(var(--width) - var(--bar-width));
+        height: calc(var(--width) - var(--bar-width));
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+      }
+
+/*進度條-2*/
+.circle2{
+    --width: 150px;
+    --percent: 16;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(rgb(32, 127, 148) var(--deg), #ccc var(--deg));
+    position: relative;
+    }
+.circle2-inside{
+--bar-width: 30px;
+position: absolute;
+        display: flex;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #ffffff;
+        width: calc(var(--width) - var(--bar-width));
+        height: calc(var(--width) - var(--bar-width));
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+      }
+
+/*進度條-3*/
+.circle3{
+    --width: 150px;
+    --percent: 35;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(rgb(32, 127, 148) var(--deg), #ccc var(--deg));
+    position: relative;
+    }
+.circle3-inside{
+--bar-width: 30px;
+position: absolute;
+        display: flex;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #ffffff;
+        width: calc(var(--width) - var(--bar-width));
+        height: calc(var(--width) - var(--bar-width));
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+      }
+
+/*進度條-4*/
+.circle4{
+    --width: 150px;
+    --percent: 95;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(rgb(32, 127, 148) var(--deg), #ccc var(--deg));
+    position: relative;
+    }
+.circle4-inside{
+--bar-width: 30px;
+position: absolute;
+        display: flex;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #ffffff;
+        width: calc(var(--width) - var(--bar-width));
+        height: calc(var(--width) - var(--bar-width));
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+      }
+      main {
+        display: flex;
+        gap: 1px;                     /* 可以調整進度條之間的水平間距 */
+    }
