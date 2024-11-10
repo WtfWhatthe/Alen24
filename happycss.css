@@ -6,6 +6,17 @@
     color: #005757;
     font-size: 150px;
 }
+.center1{
+    text-align: center;
+    color: #005757;
+    font-size: 10px;
+}
+.center2{
+    text-align: center;
+    color: #005757;
+    font-size: 20px;
+    vertical-align:auto
+}
 body{
     background-color: #ffffff;
     margin: 0px;
@@ -43,17 +54,25 @@ main{
     border-radius: 15px;
     background-image: url(ing.jpg);
     background-size: cover;
+    color: #005757;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
 }
 article{
     float: left;
     width: 73%;
 }
-aside{
+ aside{
     float: right;
     width: 25%;
     text-align: center;
-
+    grid-area: 3/1/4/4;
 }
+
 .clearfix{
     clear: both;
 }
@@ -103,7 +122,6 @@ section {
     max-width: 1080px;
     margin: 0 auto;
 }
-/* logo的樣式 */
 .header-logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -226,3 +244,5 @@ position: absolute;
         display: flex;
         gap: 1px;                     /* 可以調整進度條之間的水平間距 */
     }
+/*其他*/
+
